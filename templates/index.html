@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="page-2.html">Page 2</a></li>
+          <li><a href="page-3.html">Page 3</a></li>
+            </ul>
+      </nav>
+    </header>
+    <h1>Book Recommender</h1>
+    <p>Input the title and author of your favorite book to get started!</p>
+
+    <form>
+      <label for="title">Book Title:</label><br>
+      <input type="text" id="fname" name="fname" value=""><br>
+      <label for="fname">Author First Name:</label><br>
+      <input type="text" id="fname" name="fname" value=""><br>
+      <label for="lname">Author Last Name:</label><br>
+      <input type="text" id="lname" name="lname" value="">
+    </form>
+    <p>Show recommendations from the same author?</p>
+
+    <form action="/action_page.php">
+      <input type="checkbox" id="yes" name="yes" value="yes">
+      <label for="yes"> yes</label><br>
+      <input type="checkbox" id="no" name="no" value="no">
+      <label for="vehicle2"> no</label><br>
+
+    </form> 
+    
+  <p>Recommendations:</p>
+  </body>
+</html>
