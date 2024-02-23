@@ -13,12 +13,13 @@
       <nav>
         <ul class="menu-bar">
           <li class="menu"><a href="index.html">Home</a></li>
-          <li class="menu"></li><a href="page-2.html">Page 2</a></li>
-          <li class="menu"></li><a href="page-3.html">Page 3</a></li>
+          <li class="menu"></li><a href="featured.html">Featured</a></li>
+          <li class="menu"></li><a href="data.html">Data</a></li>
+          <li class="menu"></li><a href="about.html">About</a></li>
             </ul>
       </nav>
       <div id="header">
-        <img class="header-img" src="../static/css/book-recommender-header.svg"/>    
+        <img class="header-img" src="../images/book-recommender-header.svg"/>    
     </div>
 
     </form>
@@ -33,9 +34,20 @@
     <div class="search-container"> 
     <div id="home-search-box">
     <div class="home-search-box__icon"></div>
-    <input class="home-search-box__input" placeholder = "Type the title of a book you'd like us to base your recommendations on">
+    <input type="text" id="searchInput" onkeyup="dropdownFunction()" 
+    placeholder = "Type the title of a book you'd like us to base your recommendations on">
     <input type="image" img src="../static/css/search-icon.svg" id="submit_button"/>
     </div>
+
+    <ul id="bookOptions">
+      <li><a href="#">Book 1</a></li>
+      <li><a href="#">Book 2</a></li>
+      <li><a href="#">Book 3</a></li>
+      <li><a href="#">Book 4</a></li>
+      <li><a href="#">Book 5</a></li>
+      <li><a href="#">Book 6</a></li>
+      <li><a href="#">Book 7</a></li>
+    </ul>
 
   <div>
     <br>
@@ -54,3 +66,5 @@
       </p>
     </div>
   </div>
+
+  <script src="../static/js/app.js"></script>
