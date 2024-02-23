@@ -1,30 +1,26 @@
 <!doctype html>
+<html lang="en">
 
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
   </head>
 
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="page-2.html">Page 2</a></li>
-          <li><a href="page-3.html">Page 3</a></li>
+        <ul class="menu-bar">
+          <li class="menu"><a href="index.html">Home</a></li>
+          <li class="menu"></li><a href="page-2.html">Page 2</a></li>
+          <li class="menu"></li><a href="page-3.html">Page 3</a></li>
             </ul>
       </nav>
-    </header>
-    <h1>Book Recommender</h1>
-    <p>Input the title and author of your favorite book to get started!</p>
+      <div id="header">
+        <img class="header-img" src="../static/css/book-recommender-header.svg"/>    
+    </div>
 
-    <form>
-      <label for="title">Book Title:</label><br>
-      <input type="text" id="fname" name="fname" value=""><br>
-      <label for="fname">Author First Name:</label><br>
-      <input type="text" id="fname" name="fname" value=""><br>
-      <label for="lname">Author Last Name:</label><br>
-      <input type="text" id="lname" name="lname" value="">
     </form>
     <p>Show recommendations from the same author?</p>
 
@@ -32,10 +28,29 @@
       <input type="checkbox" id="yes" name="yes" value="yes">
       <label for="yes"> yes</label><br>
       <input type="checkbox" id="no" name="no" value="no">
-      <label for="vehicle2"> no</label><br>
+      <label for="no"> no</label><br> 
 
-    </form> 
-    
-  <p>Recommendations:</p>
-  </body>
-</html>
+    <div class="search-container"> 
+    <div id="home-search-box">
+    <div class="home-search-box__icon"></div>
+    <input class="home-search-box__input" placeholder = "Type the title of a book you'd like us to base your recommendations on">
+    <input type="image" img src="../static/css/search-icon.svg" id="submit_button"/>
+    </div>
+
+  <div>
+    <br>
+  <div class="recommendations">
+    <div class="recommendations-container">
+      <h2 class="recommendations-title">Your Recommendations:</h2>
+      <p class="recommendations-content">
+        <p>Book recommendations will somehow go here?</p>
+        <div class="rec-list-container">
+          <ul class="rec-list">
+            <li>Maybe?</li>
+            <li>In a?</li>
+            <li>List?</li>
+          </ul>
+        </div>
+      </p>
+    </div>
+  </div>
