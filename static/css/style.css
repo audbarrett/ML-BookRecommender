@@ -1,18 +1,124 @@
 body {
-    background: #9599BB;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    display: inline-block;
-    margin-right: 20px;
+    background: #F0F1F4;
+    font-family: Barlow;
+    font-size: 20px;
+    color: #353352;
   }
 
+ul.menu-bar {
+    list-style: none;
+}
 
+li.menu {
+    display: inline;
+}
+
+div {
+    font-family: Barlow;
+    color: #353352;
+    display: block;
+}
+
+header {
+    width:100%;
+    text-align:center;
+  }
+
+.header-img {
+    display:inline-block;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+
+#home-search-box {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,.05);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+}
+
+#home-search-box .home-search-box__input {
+    background: transparent;
+    border: none;
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 400;
+    height: 100%;
+    line-height: 19px;
+    margin-left: 20px;
+    outline: none;
+    width: 100%;
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 200px;
+    background-color: #F0F1F4;
+    color: #333333;
+    font-family: Barlow, Helvetica, Arial, sans-serif;
+    text-align: center;
+    padding: 40px 15px 250px;
+    display: block;
+}
+
+#home-search-box .home-search-box__icon {
+    height: 26px;
+    margin-left: 20px;
+    width: 26px;
+}
+
+#submit_button {
+    border: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    height: 50px;
+    left: 30px;
+}
+
+.recommendations {
+    font-family: Barlow, Helvetica, Arial, sans-serif;
+    padding: 45px 15px;
+    /* background-color: #F8CFCA;  */
+    background-image: url("recommendations-box.svg");
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    width: 750px;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.recommentations-container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.rec-list.container {
+    text-align: left;
+  }
   
+ul.rec-list {
+    margin-left: 50px;
+    text-align: left;
+    list-style-image: url("tiny-book-icon.svg");
+   }
+
+
+
+
+
+
+
