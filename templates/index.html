@@ -12,43 +12,40 @@
   <body>
     <header>
       <nav>
-        <ul class="menu-bar">
-          <li class="menu"><a href="index.html">Home</a></li>
-          <li class="menu"></li><a href="featured.html">Featured</a></li>
-          <li class="menu"></li><a href="data.html">Data</a></li>
-          <li class="menu"></li><a href="about.html">About</a></li>
-            </ul>
-      </nav>
+        <ul class="sidebar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="featured.html">Featured</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="about.html">About</a></li>
+
+        </ul>
+      <ul class="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li class="modilehide"><a href="featured.html">Featured</a></li>
+        <li class="modilehide"><a href="data.html">Data</a></li>
+        <li class="modilehide"><a href="about.html">About</a></li>
+        <li onclick="Sidebaropen()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
       <div id="header">
         <img class="header-img" src="../images/book-recommender-header.svg"/>    
     </div>
 
-    </form>
-    <p>Show recommendations from the same author?</p>
-
-    <form action="/action_page.php">
-      <input type="checkbox" id="yes" name="yes" value="yes">
-      <label for="yes"> yes</label><br>
-      <input type="checkbox" id="no" name="no" value="no">
-      <label for="no"> no</label><br> 
-
     <div class="search-container"> 
     <div id="home-search-box">
     <div class="home-search-box__icon"></div>
-    <input type="text" id="searchInput" onkeyup="dropdownFunction()" 
-    placeholder = "Type the title of a book you'd like us to base your recommendations on">
+    <input type="text" id="searchInput" onkeyup="dropdownFunction()"
+    placeholder = "Option 1: Type an author's name to be recommended more from them">
     <input type="image" img src="../static/css/search-icon.svg" id="submit_button"/>
     </div>
 
-    <ul id="bookOptions">
-      <li><a href="#">Book 1</a></li>
-      <li><a href="#">Book 2</a></li>
-      <li><a href="#">Book 3</a></li>
-      <li><a href="#">Book 4</a></li>
-      <li><a href="#">Book 5</a></li>
-      <li><a href="#">Book 6</a></li>
-      <li><a href="#">Book 7</a></li>
-    </ul>
+    <div class="search-container-model"> 
+      <div id="home-search-box-model">
+      <div class="home-search-box__icon"></div>
+      <input type="text" id="searchInput-model" onkeyup="dropdownFunctionModel()"
+      placeholder = "Option 2: Type an the title of a book to be recommended similar works">
+      <input type="image" img src="../static/css/search-icon.svg" id="submit_button"/>
+      </div>
 
   <div>
     <br>
