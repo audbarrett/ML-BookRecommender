@@ -5,12 +5,69 @@ body {
     color: #353352;
   }
 
-ul.menu-bar {
-    list-style: none;
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
 }
 
-li.menu {
-    display: inline;
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+    
+}
+
+nav a{
+    height: 100%;
+    padding: 0 45px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #353352;
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+ul.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.267);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+@media(max-width: 800px){
+    .modilehide{
+        display: none;
+    }
 }
 
 div {
@@ -43,6 +100,19 @@ header {
     width: 100%;
 }
 
+#home-search-box-model {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,.05);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+}
+
 .search-container {
     display: flex;
     flex-direction: column;
@@ -58,7 +128,28 @@ header {
     display: block;
 }
 
+.search-container-model {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 200px;
+    background-color: #F0F1F4;
+    color: #333333;
+    font-family: Barlow, Helvetica, Arial, sans-serif;
+    text-align: center;
+    padding: 40px 15px 250px;
+    display: block;
+}
+
 #home-search-box .home-search-box__icon {
+    height: 26px;
+    margin-left: 20px;
+    width: 26px;
+}
+
+#home-search-box-model .home-search-box__icon {
     height: 26px;
     margin-left: 20px;
     width: 26px;
@@ -127,7 +218,21 @@ ul.rec-list {
   }
 
 #searchInput {
-        background: transparent;
+    background: transparent;
+    border: none;
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 400;
+    height: 100%;
+    line-height: 19px;
+    margin-left: 20px;
+    outline: none;
+    width: 100%;
+    display: block;
+}
+
+#searchInput-model {
+    background: transparent;
     border: none;
     font-family: Barlow;
     font-size: 18px;
