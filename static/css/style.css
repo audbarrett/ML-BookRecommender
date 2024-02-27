@@ -4,10 +4,20 @@ body {
     font-size: 20px;
     color: #353352;
   }
+  .row {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+  }
+  
+  .column {
+    flex: 1; /* Allow columns to grow and shrink equally */
+    margin: 0;
+  }
 
 nav{
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
 
 nav ul {
@@ -124,7 +134,7 @@ header {
     color: #333333;
     font-family: Barlow, Helvetica, Arial, sans-serif;
     text-align: center;
-    padding: 40px 15px 250px;
+    padding: 40px 15px 50px;
     display: block;
 }
 
@@ -139,7 +149,7 @@ header {
     color: #333333;
     font-family: Barlow, Helvetica, Arial, sans-serif;
     text-align: center;
-    padding: 40px 15px 250px;
+    padding: 40px 15px 50px;
     display: block;
 }
 
@@ -164,21 +174,27 @@ header {
     left: 30px;
 }
 
+#submit_button-model {
+    border: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    height: 50px;
+    left: 785px;
+}
+
 .recommendations {
     font-family: Barlow, Helvetica, Arial, sans-serif;
     padding: 45px 15px;
-    /* background-color: #F8CFCA;  */
-    background-image: url("recommendations-box.svg");
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the background image */
-    width: 750px;
+    background-color: #F8CFCA; 
+    width: 75%;
     position: relative;
     margin: auto;
     border-radius: 5px;
+
 }
 
 .recommentations-container {
-    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
 } 
@@ -186,12 +202,31 @@ header {
 .rec-list.container {
     text-align: left;
   }
+
+.recommendations-model {
+    font-family: Barlow, Helvetica, Arial, sans-serif;
+    padding: 45px 15px;
+    background-color: #F8CFCA; 
+    width: 75%;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.recommentations-container-model {
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.rec-list.container-model {
+    text-align: left;
+  }
   
-ul.rec-list {
+/* ul.rec-list {
     margin-left: 50px;
     text-align: left;
     list-style-image: url("tiny-book-icon.svg");
-   }
+   } */
 
 #bookOptions {
     /* Remove default list styling */
