@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul class="sidebar">
+          <li onclick="Sidebarclose()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="featured.html">Featured</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      <ul class="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li class="modilehide"><a href="featured.html">Featured</a></li>
+        <li class="modilehide"><a href="data.html">Data</a></li>
+        <li class="modilehide"><a href="about.html">About</a></li>
+        <li onclick="Sidebaropen()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="header">
+    <img class="header-img" src="../images/about-the-project-header.svg"/>    
+  </div>
+
+  <div class="about-info-container">
+    <h1>How we did it?</h1>
+    <h2>Our Steps:</h2>
+    <ol type="1" class="project-steps">
+      <li>Data clean in Pandas - Christian</li>
+      <li>Data prep - Christian</li>
+      <li>Data into SQL Database - Clayton</li>
+      <li>Build model - Bob</li>
+      <li>Train model - Lindsey</li>
+      <li>Evaluate performance of model - Lindsey</li>
+      <li>Optimization of model - Lindsey</li>
+      <li>Tableau Visualizations - Clayton, David</li>
+      <li>HTML/Javascript Dashboard - Audrey, David</li>
+      <li>Documentation - Lindsey</li>
+    </ol>
+  </div>
+
+  <script src="../static/js/app.js"></script>
+  <script>
+    function Sidebaropen() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'flex';
+    }
+    function Sidebarclose(){
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

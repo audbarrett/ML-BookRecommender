@@ -1,16 +1,74 @@
 body {
+    margin: 0;
+    padding: 0;
     background: #F0F1F4;
     font-family: Barlow;
     font-size: 20px;
     color: #353352;
   }
 
-ul.menu-bar {
-    list-style: none;
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
 }
 
-li.menu {
-    display: inline;
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+    
+}
+
+nav a{
+    height: 100%;
+    padding: 0 45px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+ul.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.267);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+@media(max-width: 800px){
+    .modilehide{
+        display: none;
+    }
 }
 
 div {
@@ -25,7 +83,7 @@ header {
   }
 
 .header-img {
-    display:inline-block;
+    display: inline-block;
     margin: 0 auto;
     border-radius: 5px;
   }
@@ -41,20 +99,6 @@ header {
     flex-direction: row;
     height: 100px;
     width: 100%;
-}
-
-#home-search-box .home-search-box__input {
-    background: transparent;
-    border: none;
-    font-family: Barlow;
-    font-size: 18px;
-    font-weight: 400;
-    height: 100%;
-    line-height: 19px;
-    margin-left: 20px;
-    outline: none;
-    width: 100%;
-    display: block;
 }
 
 .search-container {
@@ -116,9 +160,64 @@ ul.rec-list {
     list-style-image: url("tiny-book-icon.svg");
    }
 
+#bookOptions {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+#bookOptions li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    font-family: Barlow;
+    color: #353352; 
+    display: block; /* Make it into a block element to fill the whole list */
+    border-radius: 5px;
+  }
+  
+#bookOptions li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
 
+#searchInput {
+        background: transparent;
+    border: none;
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 400;
+    height: 100%;
+    line-height: 19px;
+    margin-left: 20px;
+    outline: none;
+    width: 100%;
+    display: block;
+}
 
+.featured-books-container {
+    font-family: Barlow;
+    padding: 45px 15px;
+    background-color: #F8CFCA; 
+    width: 75%;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+}
 
+/* about pg styling */
+.about-info-container h1 {
+    text-align: center;
+}
+.about-info-container h2 {
+    text-align: left;
+    margin-left: 25%;
+}
 
-
-
+.project-steps {
+    margin-left: 25%;
+    text-align: left;
+}
