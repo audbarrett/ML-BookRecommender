@@ -8,7 +8,7 @@
 
 Welcome to our Book Recommendation Dashboard! This user-friendly dashboard is designed to provide you with a seamless experience for exploring top reading suggestions. With a simple drop-down menu of curated book recommendations, you can effortlessly discover your next literary adventure. By typing in a book you've read and enjoyed, the dashboard utilizes a sophisticated recommendation system that analyzes similarly rated books and authors, offering you personalized suggestions tailored to your individual tastes. Beyond the book recommendations, the dashboard features informative pages detailing the intricacies of our recommendation system, providing you with transparency on how we craft these suggestions. Additionally, you can explore visualizations showcasing the data we use to generate recommendations, allowing you to gain insights into the fascinating world of book preferences and trends. Whether you're a voracious reader or just starting your literary journey, our Book Recommendation Dashboard is your go-to tool for finding the perfect book to captivate your imagination.
 
--picture of dashboard
+-![Alt text](../Pictures/dash_screenshot_1?raw=true)
 -picture of dashboard
 -picture of dashboard
 -picture of dashboard
