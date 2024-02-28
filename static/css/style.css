@@ -1,21 +1,8 @@
 body {
-    background-image: url(../css/crumpled-background.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center;
+    background-color: #F0F1F4; 
     font-family: Barlow;
     font-size: 20px;
     color: #353352;
-  }
-  .row {
-    display: flex; /* Use flexbox layout */
-    justify-content: space-between; /* Distribute items evenly along the main axis */
-    align-items: flex-start;
-  }
-  
-  .column {
-    flex: 1; /* Allow columns to grow and shrink equally */
-    margin: 0;
   }
 
 nav{
@@ -122,37 +109,7 @@ header {
     margin-bottom: 0;
 }
 
-#home-search-box-model {
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid #e9e9e9;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px 0 rgba(0,0,0,.05);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    width: 100%;
-    margin-bottom: 0;
-}
-
 .search-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 200px;
-    background-color: #F0F1F4;
-    color: #333333;
-    font-family: Barlow, Helvetica, Arial, sans-serif;
-    text-align: center;
-    padding: 0px 15px 0px;
-    display: block;
-    margin-bottom: 0;
-}
-
-.search-container-model {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,14 +146,6 @@ header {
     left: 25px;
 }
 
-#submit_button-model {
-    border: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    position: absolute;
-    height: 50px;
-}
-
 .recommendations {
     font-family: Barlow, Helvetica, Arial, sans-serif;
     padding: 45px 15px;
@@ -206,7 +155,6 @@ header {
     margin: auto;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .recommentations-container {
@@ -218,40 +166,14 @@ header {
     text-align: left;
   }
 
-.recommendations-model {
-    font-family: Barlow, Helvetica, Arial, sans-serif;
-    padding: 45px 15px;
-    background-color: #F8CFCA; 
-    width: 75%;
-    position: relative;
-    margin: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.recommentations-container-model {
-    margin-left: auto;
-    margin-right: auto;
-} 
-
-.rec-list.container-model {
-    text-align: left;
-  }
-  
-/* ul.rec-list {
-    margin-left: 50px;
-    text-align: left;
-    list-style-image: url("tiny-book-icon.svg");
-   } */
 
 #bookOptions {
-    /* Remove default list styling */
     list-style-type: none;
     padding: 0;
     margin-top: 0;
 }
   
-#bookOptions li a {
+#bookOptions li {
     border: 1px solid #ddd; /* Add a border to all links */
     margin-top: -1px; /* Prevent double borders */
     background-color: #f6f6f6; /* Grey background color */
@@ -268,45 +190,8 @@ header {
     background-color: #eee; /* Add a hover effect to all links, except for headers */
   }
 
-  #bookOptions-model {
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0;
-  }
-  
-#bookOptions-model li a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    font-family: Barlow;
-    color: #353352; 
-    display: block; /* Make it into a block element to fill the whole list */
-    border-radius: 5px;
-  }
-  
-#bookOptions-model li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
 
 #searchInput {
-    background: transparent;
-    border: none;
-    font-family: Barlow;
-    font-size: 18px;
-    font-weight: 400;
-    height: 100%;
-    line-height: 19px;
-    margin-left: 20px;
-    outline: none;
-    width: 100%;
-    display: block;
-}
-
-#searchInput-model {
     background: transparent;
     border: none;
     font-family: Barlow;
@@ -360,8 +245,3 @@ li.menu-about-pg {
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-#bookOptions li:nth-child(n+5) {
-    display: none;
-  }
-
