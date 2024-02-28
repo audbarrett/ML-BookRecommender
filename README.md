@@ -18,7 +18,7 @@ The primary purpose of this project is to empower you, the reader, with an intel
 
 ### Instructions
 Explore with our user-friendly interface.
-- **Accessing the Dashboard:** Access the dashboard by navigating to the GitHub repository and opening the HTML file in your web browser.
+- **Accessing the Dashboard:** Access the dashboard by cloning the Github repository to your device, installing all required packages, running the Flask app using the command `flask --app app run` in terminal, and opening the HTML index file in your web browser.
 - **Book Recommendation:** Use the user-friendly interface and drop-down menu to input a book you've enjoyed.
 - **Explore Personalized Suggestions:** Click the submit button to generate personalized book suggestions based on your input.
 - **Learn About the Recommendation System:** Explore dedicated pages to understand the recommendation system's algorithms and criteria.
