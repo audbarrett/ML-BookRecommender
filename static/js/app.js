@@ -1,23 +1,74 @@
+// Function to calculate Levenshtein distance between two strings
+function levenshteinDistance(a, b) {
+  if (a.length === 0) return b.length;
+  if (b.length === 0) return a.length;
+
+  var matrix = [];
+
+  // Initialize matrix
+  var i, j;
+  for (i = 0; i <= b.length; i++) {
+    matrix[i] = [i];
+  }
+  for (j = 0; j <= a.length; j++) {
+    matrix[0][j] = j;
+  }
+
+  // Calculate distances
+  for (i = 1; i <= b.length; i++) {
+    for (j = 1; j <= a.length; j++) {
+      if (b.charAt(i - 1) === a.charAt(j - 1)) {
+        matrix[i][j] = matrix[i - 1][j - 1];
+      } else {
+        matrix[i][j] = Math.min(
+          matrix[i - 1][j - 1] + 1, // Substitution
+          matrix[i][j - 1] + 1,     // Insertion
+          matrix[i - 1][j] + 1      // Deletion
+        );
+      }
+    }
+  }
+
+  return matrix[b.length][a.length];
+}
+
+// Function to find closest matches
+function findClosestMatches(input, options, limit) {
+  var matches = [];
+
+  // Calculate Levenshtein distance for each option
+  for (var i = 0; i < options.length; i++) {
+    var distance = levenshteinDistance(input, options[i].toUpperCase());
+    matches.push({ index: i, distance: distance });
+  }
+
+  // Sort matches by distance
+  matches.sort((a, b) => a.distance - b.distance);
+
+  // Return top 'limit' matches
+  return matches.slice(0, limit);
+}
+
 function dropdownFunction() {
   var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('searchInput');
-  filter = input.value.toUpperCase();
+  input = document.getElementById('searchInput').value.toUpperCase();
   ul = document.getElementById("bookOptions");
   li = ul.getElementsByTagName('li');
+  
+  // Array to hold closest matches
+  var closestMatches = findClosestMatches(input, Array.from(li).map(item => item.textContent.toUpperCase()), 5);
 
-  // Loop through all list items, and hide those who don't match the search query
+  // Show the top 5 matches
   for (i = 0; i < li.length; i++) {
-    txtValue = li[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = ""; 
+    if (closestMatches.some(match => match.index === i)) {
+      li[i].style.display = "";
     } else {
       li[i].style.display = "none";
     }
-
   }
 
   // Show dropdown menu if there is a search query
-  ul.style.display = filter ? 'block' : 'none';
+  ul.style.display = input ? 'block' : 'none';
 }
 
 function Sidebaropen(){
@@ -88,3 +139,4 @@ fetch("http://127.0.0.1:5000/titles")
       console.error('Error:', error);
     });
   }
+
