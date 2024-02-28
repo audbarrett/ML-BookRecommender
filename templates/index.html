@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="Website Icon" type="png" href="../Pictures/books.png">
+    
   </head>
 
   <body>
@@ -40,15 +41,31 @@
             <input type="image" src="../static/css/search-icon.svg" id="submit_button"/>
           </div>
         </div>
+            <ul id="bookOptions" style="display: none;">
+              <li><a href="#">Great Expectations</a></li>
+              <li><a href="#">Sense and Sensibility</a></li>
+              <li><a href="#">Pride and Prejudice</a></li>
+              <li><a href="#">Twilight (Twilight #1)</a></li>
+              <li><a href="#">Harry Potter and the Half-Blood Prince</a></li>
+              <li><a href="#">Beloved</a></li>
+            </ul>
       </div>
       <div class="column">
         <div class="search-container-model"> 
           <div id="home-search-box-model">
             <div class="home-search-box__icon"></div>
-            <input type="text" id="searchInput-model" onkeyup="dropdownFunctionModel()" placeholder="Option 2: Type the title of a book to be recommended similar works">
             <input type="image" src="../static/css/search-icon.svg" id="submit_button-model"/>
+            <input type="text" id="searchInput-model" onkeyup="dropdownFunctionModel()" placeholder="Option 2: Type the title of a book to be recommended similar works">
           </div>
         </div>
+        <ul id="bookOptions-model" style="display: none;">
+          <li><a href="#">Great Expectations</a></li>
+            <li><a href="#">Sense and Sensibility</a></li>
+            <li><a href="#">Pride and Prejudice</a></li>
+            <li><a href="#">Twilight (Twilight #1)</a></li>
+            <li><a href="#">Harry Potter and the Half-Blood Prince</a></li>
+            <li><a href="#">Beloved</a></li>
+        </ul>
       </div>
     </div>
     
@@ -82,6 +99,5 @@
         </div>
       </div>
     </div>
-    
 
   <script src="../static/js/app.js"></script>

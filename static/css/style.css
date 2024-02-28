@@ -10,6 +10,7 @@ body {
   .row {
     display: flex; /* Use flexbox layout */
     justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: flex-start;
   }
   
   .column {
@@ -83,6 +84,12 @@ ul.sidebar {
     }
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Optional: Remove default list styles */
+}
+
 div {
     font-family: Barlow;
     color: #353352;
@@ -98,6 +105,7 @@ header {
     display:inline-block;
     margin: 0 auto;
     border-radius: 5px;
+    padding: 40px 15px 50px;
   }
 
 #home-search-box {
@@ -111,6 +119,7 @@ header {
     flex-direction: row;
     height: 100px;
     width: 100%;
+    margin-bottom: 0;
 }
 
 #home-search-box-model {
@@ -124,6 +133,7 @@ header {
     flex-direction: row;
     height: 100px;
     width: 100%;
+    margin-bottom: 0;
 }
 
 .search-container {
@@ -137,8 +147,9 @@ header {
     color: #333333;
     font-family: Barlow, Helvetica, Arial, sans-serif;
     text-align: center;
-    padding: 40px 15px 50px;
+    padding: 0px 15px 0px;
     display: block;
+    margin-bottom: 0;
 }
 
 .search-container-model {
@@ -152,8 +163,9 @@ header {
     color: #333333;
     font-family: Barlow, Helvetica, Arial, sans-serif;
     text-align: center;
-    padding: 40px 15px 50px;
+    padding: 0px 15px 0px;
     display: block;
+    margin-bottom: 0;
 }
 
 #home-search-box .home-search-box__icon {
@@ -174,7 +186,7 @@ header {
     cursor: pointer;
     position: absolute;
     height: 50px;
-    left: 30px;
+    left: 25px;
 }
 
 #submit_button-model {
@@ -183,7 +195,6 @@ header {
     cursor: pointer;
     position: absolute;
     height: 50px;
-    left: 785px;
 }
 
 .recommendations {
@@ -194,6 +205,7 @@ header {
     position: relative;
     margin: auto;
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -214,6 +226,7 @@ header {
     position: relative;
     margin: auto;
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .recommentations-container-model {
@@ -235,8 +248,8 @@ header {
     /* Remove default list styling */
     list-style-type: none;
     padding: 0;
-    margin: 0;
-  }
+    margin-top: 0;
+}
   
 #bookOptions li a {
     border: 1px solid #ddd; /* Add a border to all links */
@@ -252,6 +265,30 @@ header {
   }
   
 #bookOptions li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+
+  #bookOptions-model {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+  }
+  
+#bookOptions-model li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    font-family: Barlow;
+    color: #353352; 
+    display: block; /* Make it into a block element to fill the whole list */
+    border-radius: 5px;
+  }
+  
+#bookOptions-model li a:hover:not(.header) {
     background-color: #eee; /* Add a hover effect to all links, except for headers */
   }
 
@@ -291,6 +328,7 @@ header {
     position: relative;
     margin: auto;
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* about pg styling */
@@ -312,6 +350,16 @@ li.menu-about-pg {
     text-align: left;
 }
 
+.about-info-container {
+    font-family: Barlow;
+    padding: 45px 15px;
+    background-color: #F8CFCA; 
+    width: 75%;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 
 
