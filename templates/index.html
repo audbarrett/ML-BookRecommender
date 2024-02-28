@@ -31,51 +31,22 @@
       <div id="header">
         <img class="header-img" src="../images/book-recommender-header-final.svg"/>    
     </div>
-
-    <div class="row">
-      <!-- <div class="column"> -->
         <div class="search-container"> 
           <div id="home-search-box">
             <div class="home-search-box__icon"></div>
-            <input type="text" id="searchInput" onkeyup="dropdownFunction()" placeholder="Type the author or title of your favorite book and select a book to receive your recommendations">
-            <input type="image" src="../static/css/search-icon.svg" id="submit_button"/>
+            <input type="text" id="searchInput" onkeyup="dropdownFunction()" placeholder="Type the title of your favorite book and select a book to receive your recommendations">
+            <input type="image" src="../static/css/search-icon.svg" id="submit_button" onclick="recommendations()"/>
           </div>
-        </div>
             <ul id="bookOptions" style="display: none;">
-              <li><a href="#">Great Expectations</a></li>
-              <li><a href="#">Sense and Sensibility</a></li>
-              <li><a href="#">Pride and Prejudice</a></li>
-              <li><a href="#">Twilight (Twilight #1)</a></li>
-              <li><a href="#">Harry Potter and the Half-Blood Prince</a></li>
-              <li><a href="#">Beloved</a></li>
             </ul>
-      </div>
-      <!-- <div class="column">
-        <div class="search-container-model"> 
-          <div id="home-search-box-model">
-            <div class="home-search-box__icon"></div>
-            <input type="image" src="../static/css/search-icon.svg" id="submit_button-model"/>
-            <input type="text" id="searchInput-model" onkeyup="dropdownFunctionModel()" placeholder="Option 2: Type the title of a book to be recommended similar works">
           </div>
-        </div>
-        <ul id="bookOptions-model" style="display: none;">
-          <li><a href="#">Great Expectations</a></li>
-            <li><a href="#">Sense and Sensibility</a></li>
-            <li><a href="#">Pride and Prejudice</a></li>
-            <li><a href="#">Twilight (Twilight #1)</a></li>
-            <li><a href="#">Harry Potter and the Half-Blood Prince</a></li>
-            <li><a href="#">Beloved</a></li>
-        </ul>
       </div>
-    </div> -->
-    
-
-    <div class="row">
-      <!-- <div class="column"> -->
         <div class="recommendations">
           <div class="recommendations-container">
             <h2>Your Recommendations:</h2>
             <p class="recommendations-content">
+              <ul id="reclist">
+              </ul>
               Book recommendations will somehow go here?
             </p>
             <div class="rec-list-container">
@@ -84,19 +55,5 @@
           </div>
         </div>
       </div>
-    
-      <!-- <div class="column">
-        <div class="recommendations-model">
-          <div class="recommendations-container-model">
-            <h2>Your Recommendations:</h2>
-            <p class="recommendations-content-model">
-              Book recommendations will somehow go here?
-            </p>
-            <div class="rec-list-container-model">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
   <script src="../static/js/app.js"></script>
